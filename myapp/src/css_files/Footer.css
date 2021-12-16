@@ -1,0 +1,16 @@
+footer {
+  background-color: inherit;
+  position: fixed;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  bottom: 0;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  margin: 5px;
+  font-size: large;
+}

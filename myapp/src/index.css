@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Fruktur&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: unset;
+  text-decoration: none;
+  user-select: none;
+  /* above line is used to disable text selection highlighting  */
+  /* font-family: "Exo 2", sans-serif; */
+  /* font-family: "Lobster", cursive; */
+}
+
+body {
+  background-image: url("./pictures/pexels-johannes-plenio-1118873.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 97vh;
+  box-sizing: border-box;
+}
