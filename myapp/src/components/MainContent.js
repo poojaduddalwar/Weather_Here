@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../css_files/MainContent.css';
 import pictures from '../pictures/logo.png';
+import config from '../config';
 
 const MainContent = () => {
     const [temp, settemp] = useState('');
@@ -13,7 +14,8 @@ const MainContent = () => {
 
     //fetching data
     const fetchfun = async () => {
-        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=35e386a86afa91fd5fe2f621229de466`)
+        var id = config.MY_API_ID;
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${id}`)
         if (res.ok) {
             const res2 = await res.json()
             // console.log(res2)
