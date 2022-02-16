@@ -1,16 +1,45 @@
 footer {
-  background-color: inherit;
+  /* background-color: inherit; */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  /* border-radius: 12px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.125); */
   position: fixed;
-  display: block;
   width: 100%;
-  margin-bottom: 5px;
+  padding: 8px 0 5px 0;
+  margin-bottom: 0;
   bottom: 0;
   color: whitesmoke;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 a {
   margin: 5px;
   font-size: large;
+}
+
+h6 {
+  margin-left: 3%;
+}
+
+div.social-links {
+  margin-right: 3%;
+}
+
+@media (max-width: 770px) {
+  h6 {
+    margin-left: 0%;
+  }
+  div.social-links {
+    margin-right: 0;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
