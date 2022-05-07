@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../css_files/MainContent.css';
-import pictures from '../pictures/logo.png';
+import pictures from '../pictures/weather-app1.png';
 import config from '../config';
 
 const MainContent = () => {
@@ -19,7 +19,7 @@ const MainContent = () => {
         if (res.ok) {
             const res2 = await res.json()
             // console.log(res2)
-            const { main, weather, name, wind } = res2
+            const { main, weather, wind } = res2
             setdata(res2)
             setweather(weather[0])
             settemp(main.temp)

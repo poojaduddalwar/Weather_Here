@@ -22,7 +22,7 @@ div.searchbar {
 }
 
 div.searchbar #searchBar {
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 div.searchbar input.searchinput {
@@ -32,7 +32,7 @@ div.searchbar input.searchinput {
   font-weight: 500;
   text-shadow: none;
   color: #851f1f;
-  padding: 5px;
+  padding: 10px;
   border: none;
   outline: none;
 }
