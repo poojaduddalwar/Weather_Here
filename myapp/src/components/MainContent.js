@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../css_files/MainContent.css';
 import pictures from '../pictures/weather-app1.png';
-import config from '../config';
+// import config from '../config';
 
 const MainContent = () => {
     const [temp, settemp] = useState('');
@@ -14,7 +14,7 @@ const MainContent = () => {
 
     //fetching data
     const fetchfun = async () => {
-        var id = config.MY_API_ID;
+        var id = process.env.REACT_APP_MY_API_ID;
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${id}`)
         if (res.ok) {
             const res2 = await res.json()
